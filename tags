@@ -15,6 +15,6 @@ NamedEntities	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities
 NewRepublicTimes	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/config/application.rb	/^module NewRepublicTimes$/;"	m
 StarWarsScraper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^class StarWarsScraper$/;"	c
 change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127174645_create_characters.rb	/^  def change$/;"	f	class:CreateCharacters
-people	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.people(limit)$/;"	F	class:StarWarsScraper
+people	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.people$/;"	F	class:StarWarsScraper
 process	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^  def process(text = SENTENCE)$/;"	f	class:NamedEntities
 show	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def show$/;"	f	class:AssignmentsController
