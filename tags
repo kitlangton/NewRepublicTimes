@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:NewRepublicTimes
+ApplicationController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+AssignmentsController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^class AssignmentsController < ApplicationController$/;"	c
+AssignmentsHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/assignments_helper.rb	/^module AssignmentsHelper$/;"	m
+Character	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/character.rb	/^class Character < ActiveRecord::Base$/;"	c
+CreateCharacters	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127174645_create_characters.rb	/^class CreateCharacters < ActiveRecord::Migration$/;"	c
+NamedEntities	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^class NamedEntities$/;"	c
+NewRepublicTimes	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/config/application.rb	/^module NewRepublicTimes$/;"	m
+StarWarsScraper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^class StarWarsScraper$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127174645_create_characters.rb	/^  def change$/;"	f	class:CreateCharacters
+people	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.people(limit)$/;"	F	class:StarWarsScraper
+process	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^  def process(text = SENTENCE)$/;"	f	class:NamedEntities
+show	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def show$/;"	f	class:AssignmentsController

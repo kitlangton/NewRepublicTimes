@@ -39,6 +39,8 @@ gem 'open-nlp'
 gem 'nameable'
 gem 'rails_12factor'
 
+gem 'httparty'
+
 group :production do
   gem 'pg'
 end
