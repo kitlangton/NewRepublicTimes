@@ -63,8 +63,9 @@ br
 
 .row
   .col-sm-12.news
-    .title
+    .title.col-sm-12
       h1 = @article.title
-    br
-    .body
-      p = @article.body.gsub("\n", "<br><br>").html_safe
+    .body.col-sm-6
+      p = @article.body[0..@article.body.length/2].gsub("\n", "<br><br>").html_safe
+    .body.col-sm-6
+      p = @article.body[(@article.body.length/2 + 1)..-1].gsub("\n", "<br><br>").html_safe
