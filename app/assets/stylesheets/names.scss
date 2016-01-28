@@ -34,6 +34,7 @@ body {
     display: inline-block;
     border-bottom: 3px solid;
     overflow: hidden;
+    margin-right: 5px;
   }
 
   .void {
@@ -43,7 +44,7 @@ body {
   .empty {
     opacity: 0;
     max-width: 0;
-    margin-right: -4px;
+    margin-right: -5px;
     color: gray;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: relative;
@@ -53,7 +54,7 @@ body {
   .reveal {
     opacity: 1;
     max-width: 80px;
-    margin-right: 0px;
+    margin-right: 5px;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     overflow: hidden;
   }
