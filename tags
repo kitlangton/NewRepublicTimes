@@ -53,6 +53,7 @@ destroy	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles
 edit	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def edit$/;"	f	class:ArticlesController
 edit	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def edit$/;"	f	class:NamesController
 index	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def index$/;"	f	class:ArticlesController
+index	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/locations_controller.rb	/^  def index$/;"	f	class:LocationsController
 index	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def index$/;"	f	class:NamesController
 initialize	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^  def initialize$/;"	f	class:TimesScraper
 location_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/locations_controller.rb	/^  def location_params$/;"	f	class:LocationsController

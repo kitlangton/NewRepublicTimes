@@ -1,0 +1,24 @@
+.page-header
+  h1.center Locations / Planets
+
+.row
+  .locations.col-sm-6
+    - @locations.each do |location|
+      .name.right
+        = best_in_place location, :name, place_holder: 'edit'
+        .assign
+          .trigger
+            span.glyphicon.glyphicon-plus
+          .character-select
+            = form_for location do |f|
+              .form-group.center
+                = f.label :planet_id
+                = f.select :planet_id, @planets.map { |p| [p.name, p.id] }, class: 'form-control'
+              .form-group.center
+                = f.submit class:'btn btn-primary center'
+
+  .locations.col-sm-6
+    - @locations.each do |location|
+      - planet = (location.planet || Planet.new)
+      .name class=( 'void' if planet.id.nil?)
+        = best_in_place planet, :name, place_holder: 'edit'

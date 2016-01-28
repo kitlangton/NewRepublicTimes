@@ -1,4 +1,9 @@
 class LocationsController < ApplicationController
+  def index
+    @locations = Location.all
+    @planets = Planet.all
+  end
+
   def update
     @location = Location.find params[:id]
 
