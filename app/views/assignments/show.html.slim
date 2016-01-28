@@ -33,7 +33,8 @@
     .names.col-sm-6
       - @locations.each do |location|
         .name.right
-          = best_in_place location, :name, place_holder: 'edit', inner_class: 'best-input', class: "location"
+          .name-element
+            = best_in_place location, :name, place_holder: 'edit', inner_class: 'best-input', class: "location"
           .assign
             .trigger
               span.glyphicon.glyphicon-plus
@@ -48,7 +49,8 @@
       - @locations.each do |location|
         - planet = (location.planet || Planet.new)
         .name class=( 'void' if planet.id.nil?)
-          = best_in_place planet, :name, place_holder: 'edit', inner_class: 'best-input', class: "location"
+          .name-element
+            = best_in_place planet, :name, place_holder: 'edit', inner_class: 'best-input', class: "location"
 
   /- @locations.each do |location|
   /  .list-group-item

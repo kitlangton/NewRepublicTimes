@@ -2,39 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.name {
-
-  // span {
-  //   font-weight: bold;
-  //   margin-left: 4px;
-  //   border: 1px solid;
-  //   border-radius: 10px;
-  //   padding: 3px 5px;
-  //   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  // }
-
-  // .prefix {
-  //   border-color: green;
-  // }
-  //
-  // .first {
-  //   border-color: red;
-  // }
-  //
-  // .middle {
-  //   border-color: grey;
-  // }
-  //
-  // .last {
-  //   border-color: blue;
-  // }
-
-}
-
-// .select-character {
-//   float: right;
-// }
-//
 .news {
   background-color: yellow + 200;
   padding: 40px;
@@ -44,8 +11,8 @@
     font-family: 'Crimson Text', serif;
   }
 }
+
 .title {
-  // font-family: 'Roboto Slab', serif;
   font-family: 'Crimson Text', serif;
   font-style: oblique;
   font-weight: bold;
