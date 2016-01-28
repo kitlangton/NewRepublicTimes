@@ -42,6 +42,8 @@ gem 'bootstrap-sass'
 gem 'mechanize'
 gem 'jquery-turbolinks'
 gem 'best_in_place'
+gem 'execjs'
+gem 'therubyracer'
 
 gem 'httparty'
 
