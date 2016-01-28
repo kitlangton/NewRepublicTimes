@@ -1,4 +1,9 @@
 class AssignmentsController < ApplicationController
+  def new
+    @article = TimesScraper.new.scrape(params[:assignment][:url])
+    redirect_to assignment_path(@article)
+  end
+
   def show
     @article = Article.find(params[:article])
 

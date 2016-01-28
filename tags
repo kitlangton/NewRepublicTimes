@@ -621,6 +621,7 @@ mirror.$	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/applicati
 mirror.$	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-a3388a4444cfdc6b7b26a2a26ca61f2d12438d82bd415b878d1ed36b57f8bea0.js	/^	$.fn.autosize = function (options) {$/;"	m
 name_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def name_params$/;"	f	class:NamesController
 new	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def new$/;"	f	class:ArticlesController
+new	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def new$/;"	f	class:AssignmentsController
 nodeHook	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-85469d3f45f583be204dd7cfec82dc2fce9b80a395f9823ba1307ba5f8b04b44.js	/^var nodeHook, boolHook,$/;"	v
 nodeHook	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-a3388a4444cfdc6b7b26a2a26ca61f2d12438d82bd415b878d1ed36b57f8bea0.js	/^var nodeHook, boolHook,$/;"	v
 nodeHook.set	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-85469d3f45f583be204dd7cfec82dc2fce9b80a395f9823ba1307ba5f8b04b44.js	/^		set: function( elem, value, name ) {$/;"	m

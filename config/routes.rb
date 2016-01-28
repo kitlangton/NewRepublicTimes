@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :planets
   resources :articles
   get 'assignments/:article' => 'assignments#show', as: 'assignment'
+  post 'assignments' => 'assignments#new', as: 'new_assignment'
   root 'articles#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
