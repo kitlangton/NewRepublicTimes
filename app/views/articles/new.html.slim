@@ -1,8 +1,10 @@
-h1 New article
+h1 New Article
 
 = form_for 'assignment', url: new_assignment_path do |f|
-  = f.label :url
-  = f.text_field :url
-  = f.submit
+  .form-group
+    label New York Times URL
+    = f.text_field :url, class: 'form-control'
+  .form-group
+    = f.submit 'Save & Process', class: 'btn btn-primary'
 
 = link_to 'Back', articles_path
