@@ -322,7 +322,6 @@ change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160128045252
 change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160128050210_add_parsed_to_articles.rb	/^  def change$/;"	f	class:AddParsedToArticles
 changePage	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-85469d3f45f583be204dd7cfec82dc2fce9b80a395f9823ba1307ba5f8b04b44.js	/^  changePage = function(title, body, csrfToken, runScripts) {$/;"	m
 changePage	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-a3388a4444cfdc6b7b26a2a26ca61f2d12438d82bd415b878d1ed36b57f8bea0.js	/^  changePage = function(title, body, csrfToken, runScripts) {$/;"	m
-character_for	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def character_for(characters, name)$/;"	f	class:AssignmentsController
 character_for	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def character_for(name, selected)$/;"	f	class:AssignmentsController
 character_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/characters_controller.rb	/^  def character_params$/;"	f	class:CharactersController
 clientOrServerError	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/public/assets/application-85469d3f45f583be204dd7cfec82dc2fce9b80a395f9823ba1307ba5f8b04b44.js	/^    clientOrServerError = function() {$/;"	f
