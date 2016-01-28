@@ -44,6 +44,7 @@ gem 'best_in_place'
 gem 'execjs'
 gem 'therubyracer'
 gem "normalize-rails"
+gem 'nprogress-rails'
 
 
 gem 'httparty'

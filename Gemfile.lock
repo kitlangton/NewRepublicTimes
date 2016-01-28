@@ -116,6 +116,7 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     normalize-rails (3.0.3)
+    nprogress-rails (0.1.6.7)
     ntlm-http (0.1.1)
     open-nlp (0.1.5)
       bind-it (~> 0.2.5)
@@ -228,6 +229,7 @@ DEPENDENCIES
   n_gram
   nameable
   normalize-rails
+  nprogress-rails
   open-nlp
   pg
   rails (= 4.2.5)

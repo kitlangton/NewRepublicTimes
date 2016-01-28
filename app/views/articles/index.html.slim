@@ -1,24 +1,17 @@
-h1 Listing articles
+.row
+  .col-sm-12
+    h1 Articles
 
-table
-  thead
-    tr
-      th Title
-      /th Body
-      th
-      th
-      th
+    table.table
+      thead
+        tr
+          th Title
 
-  tbody
-    - @articles.each do |article|
-      tr
-        td = article.title
-        /td = article.body
-        /td = link_to 'Show', article
-        td = link_to 'Assign', assignment_path(article)
-        td = link_to 'Edit', edit_article_path(article)
-        td = link_to 'Destroy', article, data: {:confirm => 'Are you sure?'}, :method => :delete
+      tbody
+        - @articles.each do |article|
+          tr
+            td = link_to article.title, assignment_path(article)
+            /td = article.body
+            /td = link_to 'Show', article
 
-br
-
-= link_to 'New Article', new_article_path
+    = link_to 'New Article', new_article_path, class: 'btn btn-primary'
