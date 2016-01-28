@@ -2,6 +2,10 @@
   text-align: right;
 }
 
+body {
+  transform: translateZ(0);
+}
+
 .center {
   text-align: center;
   margin: inherit auto;
@@ -30,19 +34,18 @@
 
   .empty {
     opacity: 0;
-    width: 0;
+    max-width: 0;
     margin-right: -4px;
     color: gray;
-    transition: all 0.3s;
+    transition: all 0.5s;
     overflow: hidden;
   }
 
   .reveal {
     opacity: 1;
-    // width: inherit;
-    min-width: 37px;
+    max-width: 80px;
     margin-right: 0px;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 
   .prefix {

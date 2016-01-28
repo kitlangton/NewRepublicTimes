@@ -7,7 +7,7 @@
       .name.right
         - name.to_hash.each do |key, value|
           .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-            = best_in_place name, key.to_sym, place_holder: 'edit', data: { value: name.send(key.to_sym) }
+            = best_in_place name, key.to_sym, place_holder: key.to_s, data: { value: name.send(key.to_sym) }
         .assign
           .trigger
             span.glyphicon.glyphicon-plus
@@ -25,4 +25,4 @@
       .name class=( 'void' if character.id.nil?)
         - character.to_hash.each do |key, value|
           .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-            = best_in_place character, key.to_sym, place_holder: 'edit', data: { value: character.send(key.to_sym) }
+            = best_in_place character, key.to_sym, place_holder: key.to_s, data: { value: character.send(key.to_sym) }
