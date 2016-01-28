@@ -11,11 +11,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127174645) do
+ActiveRecord::Schema.define(version: 20160128015424) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "characters", force: :cascade do |t|
     t.string   "name"
     t.string   "gender"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "prefix"
+    t.string   "first"
+    t.string   "middle"
+    t.string   "last"
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "planet_id"
+  end
+
+  add_index "locations", ["planet_id"], name: "index_locations_on_planet_id"
+
+  create_table "names", force: :cascade do |t|
+    t.string   "prefix"
+    t.string   "first"
+    t.string   "middle"
+    t.string   "last"
+    t.integer  "character_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "gender"
+  end
+
+  add_index "names", ["character_id"], name: "index_names_on_character_id"
+
+  create_table "planets", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

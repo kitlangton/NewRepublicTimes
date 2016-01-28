@@ -54,16 +54,62 @@ On her program Tuesday night, Ms. Kelly observed that “what’s interesting he
     end
 
     named_entities
+
+    names = []
+
+    Nameable::Latin::Patterns::PREFIX['Senator'] = /^\(*(sen\.*|senator)\)*$/i
+
+    named_entities['person'].each do |name|
+      name = name.join(" ")
+      names << Nameable.parse(name)
+    end
+
+    names.each do |name|
+      if name.first && !name.last
+        name.last, name.first = name.first, name.last
+      end
+      if name.last =~ /\Ws/
+        name.last = name.last.gsub(/\Ws/, "")
+      end
+    end
+
+    names.each_with_index do |name, index|
+      names[index..-1].each do |other|
+        next if name == other || other.first && other.first != name.first
+        if name.last == other.last || name.last == other.first
+          name.first ||= other.first
+          name.middle ||= other.middle
+          name.last ||= other.last
+          name.prefix ||= other.prefix
+          name.suffix ||= other.suffix
+          names.delete(other)
+        end
+      end
+    end
+
+    locations = named_entities['location'].map { |loc| loc.join(" ") }.uniq
+
+    locations.map! do |location|
+      Location.find_or_create_by(name: location)
+    end
+
+    names.map! do |name|
+      gender = name.gender
+      hash = name.to_hash
+      hash[:gender] = gender.to_s if gender
+      hash.delete(:suffix)
+      Name.find_or_create_by(hash)
+    end
+
+    [names, locations]
   end
 end
 
-# parsed = []
+
+# names, locations = NamedEntities.new.process
 #
-# pp named_entities = NamedEntities.new.process
-#
-# named_entities['person'].each do |name|
-#   name = name.join(" ")
-#   parsed << Nameable.parse(name)
+# names.each do |name|
+#   pp name.first
 # end
-#
-# pp parsed
+# pp names
+# pp locations

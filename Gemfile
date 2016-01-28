@@ -38,6 +38,10 @@ gem 'n_gram'
 gem 'open-nlp'
 gem 'nameable'
 gem 'rails_12factor'
+gem 'bootstrap-sass'
+gem 'mechanize'
+gem 'jquery-turbolinks'
+gem 'best_in_place'
 
 gem 'httparty'
 

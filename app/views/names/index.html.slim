@@ -1,5 +1,7 @@
+.page-header
+  h1.center Assignments
+
 .row
-  h1.center People
   .names.col-sm-6
     - @names.each do |name|
       .name.right
@@ -24,42 +26,3 @@
         - character.to_hash.each do |key, value|
           .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
             = best_in_place character, key.to_sym, place_holder: 'edit', data: { value: character.send(key.to_sym) }
-
-br
-
-.row
-  h1.center Locations
-  .names.col-sm-6
-    - @locations.each do |location|
-      .name.right
-        = best_in_place location, :name, place_holder: 'edit'
-        .assign
-          .trigger
-            span.glyphicon.glyphicon-plus
-          .character-select
-            = form_for location do |f|
-              .form-group.center
-                = f.label :planet_id
-                = f.select :planet_id, @planets.map { |p| [p.name, p.id] }, class: 'form-control'
-              .form-group.center
-                = f.submit class:'btn btn-primary center'
-  .names.col-sm-6
-    - @locations.each do |location|
-      - planet = (location.planet || Planet.new)
-      .name class=( 'void' if planet.id.nil?)
-        = best_in_place planet, :name, place_holder: 'edit'
-
-  /- @locations.each do |location|
-  /  .list-group-item
-  /    .row
-  /      .location.col-sm-6
-  /        = location
-  /
-  /      .select-character.col-sm-6
-  /        = select( 'assignment', 'location', @planets.map { |p| [p.name, p.id] })
-
-.row
-  .title
-    h2 = @article.title
-  .body
-    p = @article.body

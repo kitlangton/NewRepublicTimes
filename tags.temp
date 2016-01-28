@@ -32,7 +32,6 @@ NamesController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/
 NamesHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/names_helper.rb	/^module NamesHelper$/;"	m
 NewRepublicTimes	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/config/application.rb	/^module NewRepublicTimes$/;"	m
 Planet	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/planet.rb	/^class Planet < ActiveRecord::Base$/;"	c
-PlanetController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/planet_controller.rb	/^class PlanetController < ApplicationController$/;"	c
 PlanetHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/planet_helper.rb	/^module PlanetHelper$/;"	m
 StarWarsScraper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^class StarWarsScraper$/;"	c
 TimesScraper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^class TimesScraper$/;"	c
@@ -60,7 +59,6 @@ name_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/name
 new	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def new$/;"	f	class:ArticlesController
 parse_name	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/character.rb	/^  def parse_name$/;"	f	class:Character
 people	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.people(limit)$/;"	F	class:StarWarsScraper
-planet_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/planet_controller.rb	/^  def planet_params$/;"	f	class:PlanetController
 planets	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.planets(limit)$/;"	F	class:StarWarsScraper
 process	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^  def process(text = SENTENCE)$/;"	f	class:NamedEntities
 scrape	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^  def scrape(url)$/;"	f	class:TimesScraper
@@ -74,4 +72,73 @@ update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_
 update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/characters_controller.rb	/^  def update$/;"	f	class:CharactersController
 update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/locations_controller.rb	/^  def update$/;"	f	class:LocationsController
 update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def update$/;"	f	class:NamesController
+ApplicationController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ArticlesController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^class ArticlesController < ApplicationController$/;"	c
+index	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def index$/;"	f	class:ArticlesController
+show	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def show$/;"	f	class:ArticlesController
+new	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def new$/;"	f	class:ArticlesController
+edit	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def edit$/;"	f	class:ArticlesController
+create	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def create$/;"	f	class:ArticlesController
+update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def update$/;"	f	class:ArticlesController
+destroy	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def destroy$/;"	f	class:ArticlesController
+set_article	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^    def set_article$/;"	f	class:ArticlesController
+article_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^    def article_params$/;"	f	class:ArticlesController
+AssignmentsController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^class AssignmentsController < ApplicationController$/;"	c
+show	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def show$/;"	f	class:AssignmentsController
+character_for	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/assignments_controller.rb	/^  def character_for(name, selected)$/;"	f	class:AssignmentsController
+CharactersController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/characters_controller.rb	/^class CharactersController < ApplicationController$/;"	c
+update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/characters_controller.rb	/^  def update$/;"	f	class:CharactersController
+character_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/characters_controller.rb	/^  def character_params$/;"	f	class:CharactersController
+LocationsController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/locations_controller.rb	/^class LocationsController < ApplicationController$/;"	c
+update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/locations_controller.rb	/^  def update$/;"	f	class:LocationsController
+location_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/locations_controller.rb	/^  def location_params$/;"	f	class:LocationsController
+NamesController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^class NamesController < ApplicationController$/;"	c
+index	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def index$/;"	f	class:NamesController
+show	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def show$/;"	f	class:NamesController
+edit	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def edit$/;"	f	class:NamesController
+update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def update$/;"	f	class:NamesController
+name_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/names_controller.rb	/^  def name_params$/;"	f	class:NamesController
+PlanetController	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/planet_controller.rb	/^class PlanetController < ApplicationController$/;"	c
 update	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/planet_controller.rb	/^  def update$/;"	f	class:PlanetController
+planet_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/planet_controller.rb	/^  def planet_params$/;"	f	class:PlanetController
+ApplicationHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ArticlesHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/articles_helper.rb	/^module ArticlesHelper$/;"	m
+AssignmentsHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/assignments_helper.rb	/^module AssignmentsHelper$/;"	m
+CharactersHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/characters_helper.rb	/^module CharactersHelper$/;"	m
+LocationsHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/locations_helper.rb	/^module LocationsHelper$/;"	m
+NamesHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/names_helper.rb	/^module NamesHelper$/;"	m
+PlanetHelper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/helpers/planet_helper.rb	/^module PlanetHelper$/;"	m
+Article	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/article.rb	/^class Article < ActiveRecord::Base$/;"	c
+Character	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/character.rb	/^class Character < ActiveRecord::Base$/;"	c
+parse_name	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/character.rb	/^  def parse_name$/;"	f	class:Character
+to_hash	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/character.rb	/^  def to_hash$/;"	f	class:Character
+Location	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/location.rb	/^class Location < ActiveRecord::Base$/;"	c
+Name	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/name.rb	/^class Name < ActiveRecord::Base$/;"	c
+to_hash	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/name.rb	/^  def to_hash$/;"	f	class:Name
+Planet	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/planet.rb	/^class Planet < ActiveRecord::Base$/;"	c
+NewRepublicTimes	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/config/application.rb	/^module NewRepublicTimes$/;"	m
+Application	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:NewRepublicTimes
+CreateCharacters	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127174645_create_characters.rb	/^class CreateCharacters < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127174645_create_characters.rb	/^  def change$/;"	f	class:CreateCharacters
+CreatePlanets	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127192809_create_planets.rb	/^class CreatePlanets < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127192809_create_planets.rb	/^  def change$/;"	f	class:CreatePlanets
+CreateArticles	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127202055_create_articles.rb	/^class CreateArticles < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127202055_create_articles.rb	/^  def change$/;"	f	class:CreateArticles
+CreateNames	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127222854_create_names.rb	/^class CreateNames < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127222854_create_names.rb	/^  def change$/;"	f	class:CreateNames
+AddNamesToCharacter	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127223003_add_names_to_character.rb	/^class AddNamesToCharacter < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127223003_add_names_to_character.rb	/^  def change$/;"	f	class:AddNamesToCharacter
+AddGenderToNames	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127224328_add_gender_to_names.rb	/^class AddGenderToNames < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160127224328_add_gender_to_names.rb	/^  def change$/;"	f	class:AddGenderToNames
+CreateLocations	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160128014947_create_locations.rb	/^class CreateLocations < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160128014947_create_locations.rb	/^  def change$/;"	f	class:CreateLocations
+AddPlanetsToLocations	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160128015424_add_planets_to_locations.rb	/^class AddPlanetsToLocations < ActiveRecord::Migration$/;"	c
+change	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/db/migrate/20160128015424_add_planets_to_locations.rb	/^  def change$/;"	f	class:AddPlanetsToLocations
+NamedEntities	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^class NamedEntities$/;"	c
+process	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^  def process(text = SENTENCE)$/;"	f	class:NamedEntities
+StarWarsScraper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^class StarWarsScraper$/;"	c
+people	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.people(limit)$/;"	F	class:StarWarsScraper
+planets	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.planets(limit)$/;"	F	class:StarWarsScraper
+TimesScraper	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^class TimesScraper$/;"	c
+initialize	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^  def initialize$/;"	f	class:TimesScraper
+scrape	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^  def scrape(url)$/;"	f	class:TimesScraper

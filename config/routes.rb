@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'assignments#show'
+  resources :names
+  resources :characters
+  resources :locations
+  resources :planets
+  resources :articles
+  get 'assignments/:article' => 'assignments#show', as: 'assignment'
+  root 'articles#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
