@@ -7,7 +7,7 @@
       .name.right
         - name.to_hash.each do |key, value|
           .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-            = best_in_place name, key.to_sym, place_holder: key.to_s, data: { value: name.send(key.to_sym) }
+            = best_in_place name, key.to_sym, place_holder: key.to_s, data: { value: name.send(key.to_sym) }, inner_class: "best-input"
         .assign
           .trigger
             span.glyphicon.glyphicon-plus

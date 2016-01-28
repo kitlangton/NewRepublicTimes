@@ -1,7 +1,18 @@
 class AssignmentsController < ApplicationController
   def show
     @article = Article.find(params[:article])
-    @names, @locations = NamedEntities.new.process(@article.body)
+
+    if @article.processed
+      @names = @article.names
+      @locations = @article.locations
+    else
+      @names, @locations = NamedEntities.new.process(@article.body)
+      @article.names = @names
+      @article.locations = @locations
+      @article.processed = true
+      @article.save
+    end
+
     @characters = Character.all
     @planets = Planet.all
 

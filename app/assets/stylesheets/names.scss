@@ -11,6 +11,11 @@ body {
   margin: inherit auto;
 }
 
+.location {
+  padding-bottom: 3px;
+  border-bottom: 3px solid grey;
+}
+
 .name {
 
   &:hover {
@@ -37,7 +42,7 @@ body {
     max-width: 0;
     margin-right: -4px;
     color: gray;
-    transition: all 0.5s;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     overflow: hidden;
   }
 
@@ -45,7 +50,7 @@ body {
     opacity: 1;
     max-width: 80px;
     margin-right: 0px;
-    transition: all 0.5s;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .prefix {
@@ -116,4 +121,21 @@ body {
   transform: translateY(-20px);
   z-index: 100;
   opacity: 1;
+}
+
+.best_in_place {
+  form {
+    width: 120px;
+    min-width: 40px;
+  }
+}
+
+.best-input {
+  min-width: 10px;
+  width: inherit;
+  border: none;
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

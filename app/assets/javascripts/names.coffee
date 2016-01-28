@@ -18,8 +18,8 @@ $ ->
     $(@).children(".empty").each ->
       $(@).removeClass 'reveal'
 
-  $('.best_in_place').bind "ajax:success", ->
-    if $(@).text() == "edit"
+  $('.best_in_place').bind "ajax:success", (data) ->
+    if $(@).data('bip-value') == ""
       $(@).parent(".name-element").addClass("empty")
     else
       $(@).parent(".name-element").removeClass("empty")

@@ -1,12 +1,13 @@
 .row
   .col-sm-6
     h1.center People
+    hr
     .names.col-sm-6
       - @names.each do |name|
         .name.right
           - name.to_hash.each do |key, value|
             .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-              = best_in_place name, key.to_sym, place_holder: 'edit', data: { value: name.send(key.to_sym) }
+              = best_in_place name, key.to_sym, place_holder: 'edit', data: { value: name.send(key.to_sym) }, inner_class: 'best-input'
           .assign
             .trigger
               span.glyphicon.glyphicon-plus
@@ -24,14 +25,15 @@
         .name class=( 'void' if character.id.nil?)
           - character.to_hash.each do |key, value|
             .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-              = best_in_place character, key.to_sym, place_holder: 'edit', data: { value: character.send(key.to_sym) }
+              = best_in_place character, key.to_sym, place_holder: 'edit', data: { value: character.send(key.to_sym) }, inner_class: 'best-input'
 
   .col-sm-6
     h1.center Locations
+    hr
     .names.col-sm-6
       - @locations.each do |location|
         .name.right
-          = best_in_place location, :name, place_holder: 'edit'
+          = best_in_place location, :name, place_holder: 'edit', inner_class: 'best-input', class: "location"
           .assign
             .trigger
               span.glyphicon.glyphicon-plus
@@ -46,7 +48,7 @@
       - @locations.each do |location|
         - planet = (location.planet || Planet.new)
         .name class=( 'void' if planet.id.nil?)
-          = best_in_place planet, :name, place_holder: 'edit'
+          = best_in_place planet, :name, place_holder: 'edit', inner_class: 'best-input', class: "location"
 
   /- @locations.each do |location|
   /  .list-group-item

@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160128015424) do
+ActiveRecord::Schema.define(version: 20160128050210) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "processed",  default: false
   end
 
   create_table "characters", force: :cascade do |t|
@@ -52,6 +53,17 @@ ActiveRecord::Schema.define(version: 20160128015424) do
   end
 
   add_index "names", ["character_id"], name: "index_names_on_character_id"
+
+  create_table "occurrences", force: :cascade do |t|
+    t.integer  "occurrable_id"
+    t.integer  "article_id"
+    t.string   "occurrable_type"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "occurrences", ["article_id"], name: "index_occurrences_on_article_id"
+  add_index "occurrences", ["occurrable_id"], name: "index_occurrences_on_occurrable_id"
 
   create_table "planets", force: :cascade do |t|
     t.string   "name"
