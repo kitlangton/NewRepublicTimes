@@ -4,7 +4,7 @@ class StarWarsScraper
   base_uri 'http://swapi.co/api'
 
   def self.people(limit)
-    i = 88
+    i = 1
     while (person = get "/people/#{i}/")
       sleep 0.1
       i += 1

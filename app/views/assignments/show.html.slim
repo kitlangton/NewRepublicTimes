@@ -1,53 +1,52 @@
 .row
-  h1.center People
-  .names.col-sm-6
-    - @names.each do |name|
-      .name.right
-        - name.to_hash.each do |key, value|
-          .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-            = best_in_place name, key.to_sym, place_holder: 'edit', data: { value: name.send(key.to_sym) }
-        .assign
-          .trigger
-            span.glyphicon.glyphicon-plus
-          .character-select
-            = form_for name do |f|
-              .form-group.center
-                = f.label :character_id
-                = f.select :character_id, @characters.select { |char| char.gender == name.gender.to_s }.map { |p| [p.name, p.id] }, class: 'form-control'
-              .form-group.center
-                = f.submit class:'btn btn-primary center'
+  .col-sm-6
+    h1.center People
+    .names.col-sm-6
+      - @names.each do |name|
+        .name.right
+          - name.to_hash.each do |key, value|
+            .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
+              = best_in_place name, key.to_sym, place_holder: 'edit', data: { value: name.send(key.to_sym) }
+          .assign
+            .trigger
+              span.glyphicon.glyphicon-plus
+            .character-select
+              = form_for name do |f|
+                .form-group.center
+                  = f.label :character_id
+                  = f.select :character_id, @characters.select { |char| char.gender == name.gender.to_s }.map { |p| [p.name, p.id] }, class: 'form-control'
+                .form-group.center
+                  = f.submit class:'btn btn-primary center'
 
-  .names.col-sm-6
-    - @names.each do |name|
-      - character = (name.character || Character.new)
-      .name class=( 'void' if character.id.nil?)
-        - character.to_hash.each do |key, value|
-          .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
-            = best_in_place character, key.to_sym, place_holder: 'edit', data: { value: character.send(key.to_sym) }
+    .names.col-sm-6
+      - @names.each do |name|
+        - character = (name.character || Character.new)
+        .name class=( 'void' if character.id.nil?)
+          - character.to_hash.each do |key, value|
+            .name-element class=(value.nil? || value.empty? ? "#{key} empty" : "#{key}")
+              = best_in_place character, key.to_sym, place_holder: 'edit', data: { value: character.send(key.to_sym) }
 
-br
-
-.row
-  h1.center Locations
-  .names.col-sm-6
-    - @locations.each do |location|
-      .name.right
-        = best_in_place location, :name, place_holder: 'edit'
-        .assign
-          .trigger
-            span.glyphicon.glyphicon-plus
-          .character-select
-            = form_for location do |f|
-              .form-group.center
-                = f.label :planet_id
-                = f.select :planet_id, @planets.map { |p| [p.name, p.id] }, class: 'form-control'
-              .form-group.center
-                = f.submit class:'btn btn-primary center'
-  .names.col-sm-6
-    - @locations.each do |location|
-      - planet = (location.planet || Planet.new)
-      .name class=( 'void' if planet.id.nil?)
-        = best_in_place planet, :name, place_holder: 'edit'
+  .col-sm-6
+    h1.center Locations
+    .names.col-sm-6
+      - @locations.each do |location|
+        .name.right
+          = best_in_place location, :name, place_holder: 'edit'
+          .assign
+            .trigger
+              span.glyphicon.glyphicon-plus
+            .character-select
+              = form_for location do |f|
+                .form-group.center
+                  = f.label :planet_id
+                  = f.select :planet_id, @planets.map { |p| [p.name, p.id] }, class: 'form-control'
+                .form-group.center
+                  = f.submit class:'btn btn-primary center'
+    .names.col-sm-6
+      - @locations.each do |location|
+        - planet = (location.planet || Planet.new)
+        .name class=( 'void' if planet.id.nil?)
+          = best_in_place planet, :name, place_holder: 'edit'
 
   /- @locations.each do |location|
   /  .list-group-item
@@ -58,8 +57,12 @@ br
   /      .select-character.col-sm-6
   /        = select( 'assignment', 'location', @planets.map { |p| [p.name, p.id] })
 
+br
+
 .row
-  .title
-    h2 = @article.title
-  .body
-    p = @article.body
+  .col-sm-12.news
+    .title
+      h1 = @article.title
+    br
+    .body
+      p = @article.body.gsub("\n", "<br><br>").html_safe

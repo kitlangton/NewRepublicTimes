@@ -6,18 +6,21 @@ class AssignmentsController < ApplicationController
     @planets = Planet.all
 
     @locations.each do |location|
-      planet = @planets.sample
-      @article.body.gsub!(/#{location}/i, planet.name)
+      next unless planet = location.planet
+      @article.body.gsub!(/#{location.name}/i, planet.name)
     end
 
-    @article.body.gsub!(/Mr\./, "Captain")
-    @article.body.gsub!(/Ms\.|Ms\./, "Princess")
     selected = []
 
     @names.each do |name|
-      character = (name.character || @characters.sample)
+      next unless character = name.character
+      @article.title.gsub!(name.first, character.first) if name.first && character.first
+      @article.title.gsub!(name.middle, character.middle.to_s) if name.middle && character.middle
+      @article.title.gsub!(name.last, character.last) if name.last && character.last
+
+      @article.body.gsub!(name.prefix, character.prefix) if name.prefix && character.prefix
       @article.body.gsub!(name.first, character.first) if name.first && character.first
-      @article.body.gsub!(name.middle, character.middle.to_s) if name.middle && character.middle
+      @article.body.gsub!(name.middle, character.middle.to_s) if name.middle && character.middle && !character.middle.empty?
       @article.body.gsub!(name.last, character.last) if name.last && character.last
     end
   end

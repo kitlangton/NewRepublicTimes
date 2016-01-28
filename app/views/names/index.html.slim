@@ -15,7 +15,7 @@
             = form_for name do |f|
               .form-group.center
                 = f.label :character_id
-                = f.select :character_id, @characters.select { |char| char.gender == name.gender.to_s }.map { |p| [p.name, p.id] }, class: 'form-control'
+                = f.select :character_id, @characters.map { |p| [p.name, p.id] }, class: 'form-control'
               .form-group.center
                 = f.submit class:'btn btn-primary center'
 

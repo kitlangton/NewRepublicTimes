@@ -1,11 +1,11 @@
 namespace :swapi do
   desc "Scrapes SWAPI for characters"
   task characters: :environment do
-    StarWarsScraper.people(100)
+    StarWarsScraper.people(200)
   end
 
   desc "TODO"
   task planets: :environment do
-    StarWarsScraper.planets(100)
+    StarWarsScraper.planets(200)
   end
 end

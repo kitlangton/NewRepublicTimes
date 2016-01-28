@@ -34,3 +34,20 @@
 // .select-character {
 //   float: right;
 // }
+//
+.news {
+  background-color: yellow + 200;
+  padding: 40px;
+
+  .body {
+    font-size: 1.2em;
+  }
+}
+.title {
+  // font-family: 'Roboto Slab', serif;
+  font-family: 'Crimson Text', serif;
+  font-style: oblique;
+  font-weight: bold;
+  border-bottom: 1px rgba(0,0,0,0.2) solid;
+}
+

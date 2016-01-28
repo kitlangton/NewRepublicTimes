@@ -98,7 +98,11 @@ On her program Tuesday night, Ms. Kelly observed that “what’s interesting he
       hash = name.to_hash
       hash[:gender] = gender.to_s if gender
       hash.delete(:suffix)
-      Name.find_or_create_by(hash)
+      if name = Name.where(first:hash[:first], last: hash[:last])[0]
+        name
+      else
+        Name.create(hash)
+      end
     end
 
     [names, locations]
