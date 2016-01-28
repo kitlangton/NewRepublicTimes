@@ -4,23 +4,7 @@ require 'pp'
 
 class NamedEntities
 
-  SENTENCE = "MARSHALLTOWN, Iowa — Donald J. Trump and Fox News, the candidate who has reordered the Republican presidential race and the cable network of choice for many of the party’s voters, stared each other down on Tuesday over his demand that the news anchor Megyn Kelly be dumped from moderating Thursday’s debate, the last before Monday’s caucuses.
-
-The network did not blink. So Mr. Trump walked.
-
-Mr. Trump’s announcement here that he would “probably,” or would “most likely,” or was “pretty close to” irrevocably planning to skip the debate — an aide put it more directly — created a gaping uncertainty at the center of the Republican nominating contest just as it was formally about to begin in Iowa.
-
-It was the most intense confrontation yet between two mutually dependent but increasingly antagonistic powerhouses of media and politics. Mr. Trump, who has made the presidential race into a riveting television spectacle, was overtly exploiting the ratings leverage his candidacy has created to try to bend Fox News to his will.
-
-“Let’s see how much money Fox is going to make on the debate without me,” he said at a news conference here.
-
-Fox News said Mr. Trump’s refusal to debate his rivals was “near unprecedented.”
-
-“This is rooted in one thing — Megyn Kelly, whom he has viciously attacked since August and has now spent four days demanding be removed from the debate stage,” the network said in a statement.
-
-On her program Tuesday night, Ms. Kelly observed that “what’s interesting here is Trump is not used to not controlling things, as the chief executive of a large organization.”"
-
-  def process(text = SENTENCE)
+  def process(text)
 
     OpenNLP.load
 

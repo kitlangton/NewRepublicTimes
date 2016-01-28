@@ -63,7 +63,7 @@ parse_name	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/models/character.
 people	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.people(limit)$/;"	F	class:StarWarsScraper
 planet_params	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/planet_controller.rb	/^  def planet_params$/;"	f	class:PlanetController
 planets	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/star_wars_scraper.rb	/^  def self.planets(limit)$/;"	F	class:StarWarsScraper
-process	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^  def process(text = SENTENCE)$/;"	f	class:NamedEntities
+process	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/named_entities.rb	/^  def process(text)$/;"	f	class:NamedEntities
 scrape	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/lib/times_scraper.rb	/^  def scrape(url)$/;"	f	class:TimesScraper
 set_article	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^    def set_article$/;"	f	class:ArticlesController
 show	/Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/controllers/articles_controller.rb	/^  def show$/;"	f	class:ArticlesController
