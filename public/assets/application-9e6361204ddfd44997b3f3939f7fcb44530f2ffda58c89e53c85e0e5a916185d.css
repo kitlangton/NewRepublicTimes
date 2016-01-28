@@ -9281,52 +9281,57 @@ body {
 }
 /* line 31, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .name-element {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   display: inline-block;
   border-bottom: 3px solid;
+  overflow: hidden;
 }
-/* line 36, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 39, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .void {
   opacity: 0;
 }
-/* line 40, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 43, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .empty {
   opacity: 0;
   max-width: 0;
   margin-right: -4px;
   color: gray;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
   overflow: hidden;
 }
-/* line 49, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 53, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .reveal {
   opacity: 1;
   max-width: 80px;
   margin-right: 0px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  overflow: hidden;
 }
-/* line 56, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 61, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .prefix {
   border-color: green;
 }
-/* line 60, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 65, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .first {
   border-color: red;
 }
-/* line 64, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 69, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .middle {
   border-color: gray;
 }
-/* line 68, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 73, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .name .last {
   border-color: blue;
 }
 
-/* line 73, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 78, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .assign {
   float: right;
 }
 
-/* line 77, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 82, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .trigger {
   cursor: pointer;
   width: 40px;
@@ -9336,25 +9341,25 @@ body {
   transition: all 0.2s;
   color: grey;
 }
-/* line 85, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 90, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .trigger .glyphicon {
   font-size: 25px;
   font-weight: bold;
   position: relative;
   right: 12px;
 }
-/* line 91, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 96, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .trigger .glyphicon-plus {
   opacity: 0;
   transition: all 0.3s;
 }
-/* line 96, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 101, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .trigger:hover .glyphicon-plus {
   opacity: 1;
   color: black;
 }
 
-/* line 103, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 108, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .character-select {
   opacity: 0;
   position: absolute;
@@ -9371,20 +9376,20 @@ body {
   transition: all 0.3s;
 }
 
-/* line 120, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 125, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .reveal-select {
   transform: translateY(-20px);
   z-index: 100;
   opacity: 1;
 }
 
-/* line 128, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 133, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .best_in_place form {
   width: 120px;
   min-width: 40px;
 }
 
-/* line 134, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
+/* line 139, /Users/kitlangton/Viking/Unit8/NewRepublicTimes/app/assets/stylesheets/names.scss */
 .best-input {
   min-width: 10px;
   width: inherit;

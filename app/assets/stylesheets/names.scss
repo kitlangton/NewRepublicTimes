@@ -29,8 +29,11 @@ body {
   margin-bottom: 10px;
 
   .name-element {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     display: inline-block;
     border-bottom: 3px solid;
+    overflow: hidden;
   }
 
   .void {
@@ -43,6 +46,7 @@ body {
     margin-right: -4px;
     color: gray;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
     overflow: hidden;
   }
 
@@ -51,6 +55,7 @@ body {
     max-width: 80px;
     margin-right: 0px;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    overflow: hidden;
   }
 
   .prefix {
